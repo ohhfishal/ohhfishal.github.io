@@ -39,16 +39,7 @@
     grid-template-rows: auto;
 }
 
-/*  
-*   when side navigation is not hidden, use a two column grid.  
-*   if the screen is too narrow, fall back to the initial one column grid layout.
-*   in this case the main content will be placed under the navigation panel. 
-*/
-@media only screen and (min-width: 70em) {
-    .terminal-mkdocs-main-grid {
-        grid-template-columns: 4fr 9fr;
-    }
-}</style>
+</style>
 
 
 
@@ -111,6 +102,14 @@
                     <meta property="position" content="2">
                 </li>
                 
+                
+                <li property="itemListElement" typeof="ListItem">
+                    <a href="/blog/" class="menu-item " property="item" typeof="WebPage">
+                        <span property="name">Blog</span>
+                    </a>
+                    <meta property="position" content="3">
+                </li>
+                
                     
                     
 
@@ -119,7 +118,7 @@
     <a href="#" class="menu-item" data-toggle="modal" data-target="#mkdocs_search_modal" property="item" typeof="SearchAction">
         <i aria-hidden="true" class="fa fa-search"></i> <span property="name">Search</span>
     </a>
-    <meta property="position" content="3">
+    <meta property="position" content="4">
 </li>
                     
             </ul>
@@ -129,71 +128,7 @@
 </div>
         
     <div class="container">
-        <div class="terminal-mkdocs-main-grid"><aside id="terminal-mkdocs-side-panel"><nav>
-  
-    <ul class="terminal-mkdocs-side-nav-items">
-        
-          
-
-
-
-<li class="terminal-mkdocs-side-nav-li">
-    
-    
-    
-        
-        
-            <a class="
-
-    terminal-mkdocs-side-nav-item" href="/.">Home</a>
-        
-    
-    
-    
-  </li>
-        
-          
-
-
-
-<li class="terminal-mkdocs-side-nav-li">
-    
-    
-    
-        
-        
-            <a class="
-
-    terminal-mkdocs-side-nav-item" href="/about/">About</a>
-        
-    
-    
-    
-  </li>
-        
-          
-
-
-
-<li class="terminal-mkdocs-side-nav-li">
-    
-    
-    
-        
-        
-            <a class="
-
-    terminal-mkdocs-side-nav-item" href="/projects/">Projects</a>
-        
-    
-    
-    
-  </li>
-        
-    </ul>
-  
-</nav>
-</aside>
+        <div class="terminal-mkdocs-main-grid">
             <main id="terminal-mkdocs-main-content">
 <br>
 <div class="terminal-alert terminal-alert-error">The page you requested could not be found.</div>
